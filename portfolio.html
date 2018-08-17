@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+            body {
+                background-image: url(assets/images/ep_naturalwhite.png);
+            }
+            .card-body {
+                width: 960px;
+            }
+
+           
+            h1 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: x-large;
+            }
+
+            h2 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            #project1 {
+                width: 400px;
+                height: 200px;
+            }
+
+            a {
+                color: black;
+            }
+
+            @media only screen and (max-width: 980px) {
+                .card {
+                    width: 100%;
+                }
+            }
+
+            @media only screen and (max-width: 768px) {
+               
+                #project1, #project2, #project3, #project4, #project5 {
+                    width: 75%;
+                }
+            }
+            
+
+            @media only screen and (max-width: 640px) {
+                .card-body {
+                    width: 100%;
+                    clear: auto;
+                }
+
+                #project1, #project2, #project3, #project4, #project5 {
+                    width: 75%;
+                }
+            }
+            </style>
+    <title>Portfolio</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+                <div class="container">
+                        <a class="navbar-brand" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: x-large; background-color: teal; padding: 15px">Thomas J. Stone</a>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html" style="border-right-width: 1px; border-right-style: solid;">About <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html" style="border-right-width: 1px; border-right-style: solid;">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            </ul>
+                        </div>
+                </div>
+                </nav>
+    <br><br>
+        <div class="container" style="padding-bottom: 100px;">
+            <div class="card">
+                <div class="card-body">
+                <h1 class="border-bottom">Portfolio</h1>
+                <div class="row">
+                    <div class="col-6">
+                        <a href="https://tomstone76.github.io/Psychic-Game/index.html"><img id="project1" src="assets/images/psychic_game.png" alt="Project1">
+                        <h2 class="name">The Psychic Game</h2>
+                        </a>
+                    </div>
+                    <br>
+                    <div class="col-6">
+                        <img id="project2" src="assets/images/project2.jpg" alt="Project2">
+                        <h2 class="name">Project 2</h2>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                    <div class="col-6">
+                        <img id="project3" src="assets/images/project3.jpg" alt="Project3">
+                        <h2 class="name">Project 3</h2>
+                     </div>
+                    <br>
+                    <div class="col-6">
+                        <img id="project4" src="assets/images/project4.jpg" alt="Project4">
+                        <h2 class="name">Project 4</h2>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                    <div class="col-6">
+                        <img id="project5" src="assets/images/project5.jpg" alt="Project5">
+                        <h2 class="name">Project 5</h2>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-bottom">
+                <nav class="navbar navbar-light bg-white text-center border-top">
+                    <div class="container" style="justify-content: center;">
+                        <a class="navbar-brand" href="#"  style="font-size: small; padding-top: 25px;">&copy; 2018 Thomas Joseph Stone</a>
+                     </div>
+                </nav>
+            </div>
+</body>
+</html>
