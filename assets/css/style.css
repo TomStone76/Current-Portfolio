@@ -152,8 +152,13 @@
   }
   
   body {
-    background-image: url(../images/ep_naturalwhite.png);
+    background-image: url("../images/philly-background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     height: 100%;
+    width: 100%;
     background-position: center;
     margin: 0;
     position: relative;
@@ -230,3 +235,5 @@
   .navbar-brand {
     background-color: white;
   }
+
+  

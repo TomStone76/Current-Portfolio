@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
     body {
-        background-image: url(assets/images/ep_naturalwhite.png);
-    }
+            background-image: url("assets/images/philly-background.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            margin: 0;
+            position: relative;
+         } 
 
     p {
         padding-left: 30px;
@@ -19,8 +28,37 @@
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: x-large;
     }
+
     .card-body {
         width: 960px;
+    }
+
+    #info-card {
+        -moz-box-shadow: inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow: inset 0 0 10px #000000;
+        animation: fadein 3s;
+    }
+
+    @keyframes fadein {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    #top-bar {
+        -moz-box-shadow: inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow: inset 0 0 10px #000000;
+        border-radius: 10px;
+        border-width: 0px;
+    }
+
+    #bottom-bar {
+        -moz-box-shadow: inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow: inset 0 0 10px #000000;
+        border-radius: 10px;
+        border-width: 0px;
     }
 
     @media only screen and (max-width: 980px) {
@@ -50,7 +88,7 @@
     <title>About</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">   
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" id="top-bar">   
         <div class="container">
                 <a class="navbar-brand" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: x-large; background-color: white; padding: 15px">Thomas J. Stone</a>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -69,7 +107,7 @@
     </nav>
     <br><br>
         <div class="container" style="padding-bottom: 100px;">
-                <div class="card col-xs-12">
+                <div class="card col-xs-12" id="info-card" style="border-radius: 10px;">
                     <div class="card-body">   
                             <h1 class="border-bottom">About Me</h1>
                             <div class="row">
@@ -85,7 +123,7 @@
                 </div>
                 </div>
                 <div class="fixed-bottom">
-                        <nav class="navbar navbar-light bg-white text-center border-top">
+                        <nav class="navbar navbar-light bg-white text-center border-top" id="bottom-bar">
                             <div class="container" style="justify-content: center;">
                                 <a class="navbar-brand" href="#"  style="font-size: small; padding-top: 25px;">&copy; 2018 Thomas Joseph Stone</a>
                             </div>
