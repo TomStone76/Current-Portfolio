@@ -226,3 +226,7 @@
   #project1 {
     width: 400px;
   }
+
+  .navbar-brand {
+    background-color: white;
+  }
